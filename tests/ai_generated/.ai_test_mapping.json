@@ -1,0 +1,72 @@
+{
+  "workers/run_workers.py::main": {
+    "function_name": "main",
+    "language": "python",
+    "source_file": "workers/run_workers.py",
+    "target_file": "test_ai_generated_workers_run_workers.py",
+    "test_id": "main",
+    "test_names": [
+      "test_main_all_workers_keyboard_interrupt_handled",
+      "test_main_all_workers_start_and_join",
+      "test_main_argument_parser_add_argument_called_with_correct_choices",
+      "test_main_document_processing_worker_called",
+      "test_main_document_processing_worker_called_with_unexpected_worker_value",
+      "test_main_revision_processing_worker_called",
+      "test_main_scraping_worker_called",
+      "test_main_unknown_worker_calls_logger_error_and_exits"
+    ]
+  },
+  "workers/run_workers.py::run_document_processing_worker": {
+    "function_name": "run_document_processing_worker",
+    "language": "python",
+    "source_file": "workers/run_workers.py",
+    "target_file": "test_ai_generated_workers_run_workers.py",
+    "test_id": "run_document_processing_worker",
+    "test_names": [
+      "test_run_document_processing_worker_asyncio_run_called_with_shutdown_coroutine",
+      "test_run_document_processing_worker_keyboard_interrupt_logs_and_shutdown_called",
+      "test_run_document_processing_worker_logger_info_called_only_once_on_keyboard_interrupt",
+      "test_run_document_processing_worker_logger_info_not_called_if_no_keyboard_interrupt",
+      "test_run_document_processing_worker_shutdown_called_even_if_start_raises_non_keyboard_exception",
+      "test_run_document_processing_worker_shutdown_called_even_if_start_returns_normally",
+      "test_run_document_processing_worker_start_called_and_shutdown_called",
+      "test_run_document_processing_worker_start_raises_unexpected_exception_propagates"
+    ]
+  },
+  "workers/run_workers.py::run_revision_processing_worker": {
+    "function_name": "run_revision_processing_worker",
+    "language": "python",
+    "source_file": "workers/run_workers.py",
+    "target_file": "test_ai_generated_workers_run_workers.py",
+    "test_id": "run_revision_processing_worker",
+    "test_names": [
+      "test_run_revision_processing_worker_asyncio_run_called_with_coroutine",
+      "test_run_revision_processing_worker_happy_path",
+      "test_run_revision_processing_worker_keyboard_interrupt",
+      "test_run_revision_processing_worker_logger_called_only_on_keyboard_interrupt",
+      "test_run_revision_processing_worker_logger_not_called_without_keyboard_interrupt",
+      "test_run_revision_processing_worker_shutdown_raises_exception",
+      "test_run_revision_processing_worker_start_and_shutdown_called_once",
+      "test_run_revision_processing_worker_start_raises_other_exception",
+      "test_run_revision_processing_worker_worker_instantiation_called_once"
+    ]
+  },
+  "workers/run_workers.py::run_scraping_worker": {
+    "function_name": "run_scraping_worker",
+    "language": "python",
+    "source_file": "workers/run_workers.py",
+    "target_file": "test_ai_generated_workers_run_workers.py",
+    "test_id": "run_scraping_worker",
+    "test_names": [
+      "test_run_scraping_worker_asyncio_run_called_with_correct_coroutine",
+      "test_run_scraping_worker_calls_start_and_shutdown",
+      "test_run_scraping_worker_handles_keyboard_interrupt",
+      "test_run_scraping_worker_logger_info_called_only_once_on_keyboard_interrupt",
+      "test_run_scraping_worker_logger_info_not_called_if_no_keyboard_interrupt",
+      "test_run_scraping_worker_raises_if_asyncio_run_raises",
+      "test_run_scraping_worker_shutdown_always_called_even_if_start_raises_other_exception",
+      "test_run_scraping_worker_shutdown_called_once_when_start_completes_normally",
+      "test_run_scraping_worker_shutdown_called_once_when_start_raises_non_keyboard_interrupt"
+    ]
+  }
+}
