@@ -131,6 +131,7 @@ jobs:
           llm_api_url: ${{ secrets.LLM_API_URL }}
           llm_api_key: ${{ secrets.LLM_API_KEY }}
           llm_model: ${{ secrets.LLM_MODEL }}
+          project_context: ${{ secrets.PROJECT_CONTEXT }}
           comment_on_pr: "true"
 
       # 13. Debug generated files
