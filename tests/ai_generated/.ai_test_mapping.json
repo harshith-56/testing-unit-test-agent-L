@@ -1,0 +1,625 @@
+{
+  "workers/base_worker.py::BaseWorker.__init__": {
+    "function_name": "BaseWorker.__init__",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker___init",
+    "test_names": [
+      "test_init_raises_value_error_on_invalid_int_env_vars",
+      "test_init_raises_value_error_when_no_project_id_and_subscription_not_full_path",
+      "test_init_with_empty_string_subscription_name_and_env_vars",
+      "test_init_with_full_subscription_path_and_env_vars",
+      "test_init_with_negative_values_in_env_vars",
+      "test_init_with_scraping_subscription_env_var",
+      "test_init_with_subscription_name_from_env_and_custom_env_vars",
+      "test_init_with_zero_values_in_env_vars"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker._callback": {
+    "function_name": "BaseWorker._callback",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker__callback",
+    "test_names": [
+      "test_callback_data_decode_raises_exception_logs_error",
+      "test_callback_failed_processing_logs_error",
+      "test_callback_json_decode_error_logs_error",
+      "test_callback_missing_correlation_id_uses_unknown",
+      "test_callback_process_message_raises_exception_logs_error",
+      "test_callback_process_message_raises_non_runtime_exception_logs_error",
+      "test_callback_process_message_returns_non_bool_logs_error",
+      "test_callback_successful_processing"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker.create_callback_data": {
+    "function_name": "BaseWorker.create_callback_data",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker_create_callback_data",
+    "test_names": [
+      "test_create_callback_data_all_none_strings",
+      "test_create_callback_data_basic_fields_present",
+      "test_create_callback_data_empty_strings",
+      "test_create_callback_data_invalid_types",
+      "test_create_callback_data_none_result_data",
+      "test_create_callback_data_result_data_empty_dict",
+      "test_create_callback_data_result_data_non_dict",
+      "test_create_callback_data_with_result_data"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker.health_check": {
+    "function_name": "BaseWorker.health_check",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker_health_check",
+    "test_names": [
+      "test_health_check_class_name_is_correct",
+      "test_health_check_env_var_negative",
+      "test_health_check_env_var_non_integer",
+      "test_health_check_env_var_zero",
+      "test_health_check_project_id_none",
+      "test_health_check_running_flag_none",
+      "test_health_check_running_status_and_env_var",
+      "test_health_check_stopped_status_and_default_max_messages",
+      "test_health_check_subscription_path_empty_string"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker.process_message": {
+    "function_name": "BaseWorker.process_message",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker_process_message",
+    "test_names": [
+      "test_process_message_not_implemented",
+      "test_process_message_with_empty_correlation_id",
+      "test_process_message_with_empty_message_data",
+      "test_process_message_with_none_correlation_id",
+      "test_process_message_with_none_message_data"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker.send_callback": {
+    "function_name": "BaseWorker.send_callback",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker_send_callback",
+    "test_names": [
+      "test_send_callback_callback_data_none_raises_type_error",
+      "test_send_callback_empty_headers_dict_and_auth_token_adds_auth_header",
+      "test_send_callback_generic_exception_logs_and_returns_false",
+      "test_send_callback_headers_none_and_auth_token_none_sends_without_auth_header",
+      "test_send_callback_http_status_error_logs_and_returns_false",
+      "test_send_callback_invalid_callback_url_type_raises_and_logs",
+      "test_send_callback_no_callback_url_logs_and_returns_true",
+      "test_send_callback_successful_post_returns_true_and_logs",
+      "test_send_callback_timeout_exception_logs_and_returns_false"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker.shutdown": {
+    "function_name": "BaseWorker.shutdown",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker_shutdown",
+    "test_names": [
+      "test_shutdown_called_multiple_times",
+      "test_shutdown_calls_logger_info_http_client_aclose_and_stop",
+      "test_shutdown_raises_if_http_client_aclose_raises",
+      "test_shutdown_raises_if_logger_info_raises",
+      "test_shutdown_raises_if_stop_raises",
+      "test_shutdown_with_http_client_aclose_none",
+      "test_shutdown_with_logger_none",
+      "test_shutdown_with_stop_none"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker.start": {
+    "function_name": "BaseWorker.start",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker_start",
+    "test_names": [
+      "test_start_streaming_pull_future_cancel_result_raises",
+      "test_start_streaming_pull_future_result_raises_non_keyboard",
+      "test_start_subscribe_raises",
+      "test_start_subscription_access_raises",
+      "test_start_subscription_path_empty_string",
+      "test_start_subscription_path_none_raises",
+      "test_start_successful_run"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker.stop": {
+    "function_name": "BaseWorker.stop",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker_stop",
+    "test_names": [
+      "test_stop_logger_info_called_once_with_exact_message",
+      "test_stop_multiple_calls_always_sets_running_false_and_logs",
+      "test_stop_sets_running_false_and_logs_info",
+      "test_stop_when_already_stopped_logs_info_and_sets_running_false",
+      "test_stop_with_logger_info_called_when_running_is_non_boolean",
+      "test_stop_with_logger_info_called_when_running_is_none",
+      "test_stop_with_logger_info_called_with_non_string_message",
+      "test_stop_with_logger_info_raises_exception_propagates"
+    ]
+  },
+  "workers/base_worker.py::BaseWorker.validate_message": {
+    "function_name": "BaseWorker.validate_message",
+    "language": "python",
+    "source_file": "workers/base_worker.py",
+    "target_file": "test_ai_generated_workers_base_worker.py",
+    "test_id": "BaseWorker_validate_message",
+    "test_names": [
+      "test_validate_message_empty_dict_for_required_fields_raises_validation_error",
+      "test_validate_message_extra_fields_ignored_or_error_based_on_model",
+      "test_validate_message_field_with_none_value_raises_if_not_optional",
+      "test_validate_message_none_as_message_data_raises_type_error",
+      "test_validate_message_success_returns_instance",
+      "test_validate_message_unexpected_exception_logs_and_raises",
+      "test_validate_message_valid_with_minimal_fields",
+      "test_validate_message_validation_error_logs_and_raises"
+    ]
+  },
+  "workers/context.py::Context.get": {
+    "function_name": "Context.get",
+    "language": "python",
+    "source_file": "workers/context.py",
+    "target_file": "test_ai_generated_workers_context.py",
+    "test_id": "Context_get",
+    "test_names": [
+      "test_get_attribute_with_boolean_false_returns_false_not_default",
+      "test_get_attribute_with_value_none_returns_none_not_default",
+      "test_get_attribute_with_zero_value_returns_zero_not_default",
+      "test_get_existing_attribute_returns_value",
+      "test_get_nonexistent_attribute_returns_default_none",
+      "test_get_nonexistent_attribute_returns_provided_default",
+      "test_get_with_empty_string_key_returns_default",
+      "test_get_with_integer_key_raises_type_error",
+      "test_get_with_none_key_raises_type_error"
+    ]
+  },
+  "workers/document_processing_worker/doc_processing_worker.py::DocumentProcessingWorker.__init__": {
+    "function_name": "DocumentProcessingWorker.__init__",
+    "language": "python",
+    "source_file": "workers/document_processing_worker/doc_processing_worker.py",
+    "target_file": "test_ai_generated_workers_document_processing_worker_doc_processing_worker.py",
+    "test_id": "DocumentProcessingWorker___init",
+    "test_names": [
+      "test_init_accepts_subscription_name_with_long_string",
+      "test_init_accepts_subscription_name_with_numeric_string",
+      "test_init_accepts_subscription_name_with_special_characters",
+      "test_init_raises_value_error_when_env_var_empty",
+      "test_init_raises_value_error_when_env_var_is_none",
+      "test_init_raises_value_error_when_env_var_is_whitespace",
+      "test_init_raises_value_error_when_env_var_missing",
+      "test_init_with_valid_subscription_name"
+    ]
+  },
+  "workers/document_processing_worker/doc_processing_worker.py::DocumentProcessingWorker._convert_date_to_iso": {
+    "function_name": "DocumentProcessingWorker._convert_date_to_iso",
+    "language": "python",
+    "source_file": "workers/document_processing_worker/doc_processing_worker.py",
+    "target_file": "test_ai_generated_workers_document_processing_worker_doc_processing_worker.py",
+    "test_id": "DocumentProcessingWorker__convert_date_to_iso",
+    "test_names": [
+      "test_convert_date_to_iso_with_empty_string_returns_original_string",
+      "test_convert_date_to_iso_with_invalid_date_format_returns_original_string",
+      "test_convert_date_to_iso_with_leap_year_date_returns_iso_format",
+      "test_convert_date_to_iso_with_malformed_date_returns_original_string",
+      "test_convert_date_to_iso_with_non_string_input_raises_type_error",
+      "test_convert_date_to_iso_with_none_returns_none",
+      "test_convert_date_to_iso_with_single_digit_month_and_day_returns_iso_format",
+      "test_convert_date_to_iso_with_valid_date_returns_iso_format",
+      "test_convert_date_to_iso_with_whitespace_string_returns_original_string"
+    ]
+  },
+  "workers/document_processing_worker/doc_processing_worker.py::DocumentProcessingWorker._create_callback_data": {
+    "function_name": "DocumentProcessingWorker._create_callback_data",
+    "language": "python",
+    "source_file": "workers/document_processing_worker/doc_processing_worker.py",
+    "target_file": "test_ai_generated_workers_document_processing_worker_doc_processing_worker.py",
+    "test_id": "DocumentProcessingWorker__create_callback_data",
+    "test_names": [
+      "test_create_callback_data_completion_payload_error_message_used_when_message_empty",
+      "test_create_callback_data_completion_payload_missing_keys",
+      "test_create_callback_data_document_revision_dict_missing_keys",
+      "test_create_callback_data_invalid_types_for_message_and_status",
+      "test_create_callback_data_message_data_none_does_not_add_raw_payload",
+      "test_create_callback_data_with_completion_payload_and_message_data",
+      "test_create_callback_data_with_document_revision_dict_and_no_message_data",
+      "test_create_callback_data_with_neither_completion_payload_nor_document_revision_dict"
+    ]
+  },
+  "workers/document_processing_worker/doc_processing_worker.py::DocumentProcessingWorker._extract_guideline": {
+    "function_name": "DocumentProcessingWorker._extract_guideline",
+    "language": "python",
+    "source_file": "workers/document_processing_worker/doc_processing_worker.py",
+    "target_file": "test_ai_generated_workers_document_processing_worker_doc_processing_worker.py",
+    "test_id": "DocumentProcessingWorker__extract_guideline",
+    "test_names": [
+      "test_extract_guideline_extract_guideline_raises_exception",
+      "test_extract_guideline_logger_info_called_once_with_correct_args",
+      "test_extract_guideline_to_thread_raises_exception",
+      "test_extract_guideline_with_empty_raw_text",
+      "test_extract_guideline_with_non_string_raw_text_raises_type_error",
+      "test_extract_guideline_with_none_raw_text",
+      "test_extract_guideline_with_valid_raw_text"
+    ]
+  },
+  "workers/document_processing_worker/doc_processing_worker.py::DocumentProcessingWorker._process_document": {
+    "function_name": "DocumentProcessingWorker._process_document",
+    "language": "python",
+    "source_file": "workers/document_processing_worker/doc_processing_worker.py",
+    "target_file": "test_ai_generated_workers_document_processing_worker_doc_processing_worker.py",
+    "test_id": "DocumentProcessingWorker__process_document",
+    "test_names": [
+      "test_process_document_completion_error_message_none",
+      "test_process_document_exception_in_to_thread",
+      "test_process_document_file_name_without_extension",
+      "test_process_document_invalid_file_path_format",
+      "test_process_document_status_not_str_converted",
+      "test_process_document_success_existing_revision",
+      "test_process_document_success_new_revision",
+      "test_process_document_update_doc_request_raises"
+    ]
+  },
+  "workers/document_processing_worker/doc_processing_worker.py::DocumentProcessingWorker._update_doc_request": {
+    "function_name": "DocumentProcessingWorker._update_doc_request",
+    "language": "python",
+    "source_file": "workers/document_processing_worker/doc_processing_worker.py",
+    "target_file": "test_ai_generated_workers_document_processing_worker_doc_processing_worker.py",
+    "test_id": "DocumentProcessingWorker__update_doc_request",
+    "test_names": [
+      "test_update_doc_request_convert_date_to_iso_returns_original_on_value_error",
+      "test_update_doc_request_effective_and_end_date_none_passed_through",
+      "test_update_doc_request_no_secret_key_header",
+      "test_update_doc_request_no_update_url",
+      "test_update_doc_request_post_raises_logs_error",
+      "test_update_doc_request_post_raises_on_raise_for_status_logs_error",
+      "test_update_doc_request_successful_post"
+    ]
+  },
+  "workers/document_processing_worker/doc_processing_worker.py::DocumentProcessingWorker.process_document": {
+    "function_name": "DocumentProcessingWorker.process_document",
+    "language": "python",
+    "source_file": "workers/document_processing_worker/doc_processing_worker.py",
+    "target_file": "test_ai_generated_workers_document_processing_worker_doc_processing_worker.py",
+    "test_id": "DocumentProcessingWorker_process_document",
+    "test_names": [
+      "test_process_document_callback_url_none_does_not_send_callback",
+      "test_process_document_failure_status_and_callback_sent_without_secret_key",
+      "test_process_document_raises_exception_and_send_callback_raises_logs_error_and_returns_false",
+      "test_process_document_raises_exception_and_sends_failure_callback",
+      "test_process_document_result_missing_keys_defaults_to_failed_and_false",
+      "test_process_document_secret_key_empty_header_not_included",
+      "test_process_document_success_completed_status_and_callback_sent",
+      "test_process_document_success_no_callback_url_returns_success"
+    ]
+  },
+  "workers/document_processing_worker/doc_processing_worker.py::DocumentProcessingWorker.process_message": {
+    "function_name": "DocumentProcessingWorker.process_message",
+    "language": "python",
+    "source_file": "workers/document_processing_worker/doc_processing_worker.py",
+    "target_file": "test_ai_generated_workers_document_processing_worker_doc_processing_worker.py",
+    "test_id": "DocumentProcessingWorker_process_message",
+    "test_names": [
+      "test_process_message_document_processing_happy_path",
+      "test_process_message_extract_guideline_happy_path",
+      "test_process_message_invalid_payload_raises_and_sends_callback",
+      "test_process_message_invalid_task_type_defaults_to_document_processing",
+      "test_process_message_no_task_type_defaults_to_document_processing",
+      "test_process_message_payload_not_dict_job_id_unknown",
+      "test_process_message_validate_message_raises_and_callback_send_callback_raises",
+      "test_process_message_validate_message_raises_without_callback_url"
+    ]
+  },
+  "workers/models.py::SubmitScrapingJobPayload.parse_connection": {
+    "function_name": "SubmitScrapingJobPayload.parse_connection",
+    "language": "python",
+    "source_file": "workers/models.py",
+    "target_file": "test_ai_generated_workers_models.py",
+    "test_id": "SubmitScrapingJobPayload_parse_connection",
+    "test_names": [
+      "test_parse_connection_with_boolean_input_returns_boolean",
+      "test_parse_connection_with_empty_string_raises_value_error",
+      "test_parse_connection_with_invalid_json_string_raises_value_error",
+      "test_parse_connection_with_non_string_input_returns_input_unchanged",
+      "test_parse_connection_with_none_input_returns_none",
+      "test_parse_connection_with_string_array_returns_list",
+      "test_parse_connection_with_string_null_returns_none",
+      "test_parse_connection_with_string_number_returns_number",
+      "test_parse_connection_with_valid_json_string"
+    ]
+  },
+  "workers/revision_processing_worker/revision_worker.py::RevisionProcessingWorker.__init__": {
+    "function_name": "RevisionProcessingWorker.__init__",
+    "language": "python",
+    "source_file": "workers/revision_processing_worker/revision_worker.py",
+    "target_file": "test_ai_generated_workers_revision_processing_worker_revision_worker.py",
+    "test_id": "RevisionProcessingWorker___init",
+    "test_names": [
+      "test_init_accepts_subscription_name_with_long_string",
+      "test_init_accepts_subscription_name_with_numeric_string",
+      "test_init_accepts_subscription_name_with_special_characters",
+      "test_init_raises_value_error_when_env_var_empty",
+      "test_init_raises_value_error_when_env_var_is_none",
+      "test_init_raises_value_error_when_env_var_is_whitespace",
+      "test_init_raises_value_error_when_env_var_missing",
+      "test_init_with_valid_subscription_name"
+    ]
+  },
+  "workers/revision_processing_worker/revision_worker.py::RevisionProcessingWorker._build_callback": {
+    "function_name": "RevisionProcessingWorker._build_callback",
+    "language": "python",
+    "source_file": "workers/revision_processing_worker/revision_worker.py",
+    "target_file": "test_ai_generated_workers_revision_processing_worker_revision_worker.py",
+    "test_id": "RevisionProcessingWorker__build_callback",
+    "test_names": [
+      "test_build_callback_completion_model_dump_returns_empty_dict",
+      "test_build_callback_document_revision_with_zero_pages_and_empty_codes",
+      "test_build_callback_with_completion_model_dump_raising_exception",
+      "test_build_callback_with_document_revision_none_added_removed_codes",
+      "test_build_callback_with_full_completion_and_document_revision",
+      "test_build_callback_with_invalid_job_id_type",
+      "test_build_callback_with_none_completion_and_document_revision",
+      "test_build_callback_without_document_revision_and_missing_optional_fields"
+    ]
+  },
+  "workers/revision_processing_worker/revision_worker.py::RevisionProcessingWorker._process_revision": {
+    "function_name": "RevisionProcessingWorker._process_revision",
+    "language": "python",
+    "source_file": "workers/revision_processing_worker/revision_worker.py",
+    "target_file": "test_ai_generated_workers_revision_processing_worker_revision_worker.py",
+    "test_id": "RevisionProcessingWorker__process_revision",
+    "test_names": [
+      "test_process_revision_completion_status_not_completed",
+      "test_process_revision_invalid_file_path_format",
+      "test_process_revision_no_document_processing_complete_url",
+      "test_process_revision_send_callback_raises_exception",
+      "test_process_revision_success_with_file_extension",
+      "test_process_revision_success_without_file_extension",
+      "test_process_revision_to_thread_raises_exception",
+      "test_process_revision_update_doc_request_raises_exception"
+    ]
+  },
+  "workers/revision_processing_worker/revision_worker.py::RevisionProcessingWorker._secret_headers": {
+    "function_name": "RevisionProcessingWorker._secret_headers",
+    "language": "python",
+    "source_file": "workers/revision_processing_worker/revision_worker.py",
+    "target_file": "test_ai_generated_workers_revision_processing_worker_revision_worker.py",
+    "test_id": "RevisionProcessingWorker__secret_headers",
+    "test_names": [
+      "test_secret_headers_called_multiple_times",
+      "test_secret_headers_with_empty_secret_key",
+      "test_secret_headers_with_non_string_secret_key",
+      "test_secret_headers_with_secret_key",
+      "test_secret_headers_with_secret_key_containing_spaces",
+      "test_secret_headers_with_secret_key_special_characters",
+      "test_secret_headers_without_secret_key"
+    ]
+  },
+  "workers/revision_processing_worker/revision_worker.py::RevisionProcessingWorker._send_failure": {
+    "function_name": "RevisionProcessingWorker._send_failure",
+    "language": "python",
+    "source_file": "workers/revision_processing_worker/revision_worker.py",
+    "target_file": "test_ai_generated_workers_revision_processing_worker_revision_worker.py",
+    "test_id": "RevisionProcessingWorker__send_failure",
+    "test_names": [
+      "test_send_failure_calls_send_callback_with_correct_data_and_headers",
+      "test_send_failure_empty_job_id_and_message_still_calls_send_callback",
+      "test_send_failure_invalid_url_env_calls_send_callback_and_logs_no_error",
+      "test_send_failure_no_env_url_does_not_call_send_callback",
+      "test_send_failure_none_job_id_and_message_still_calls_send_callback",
+      "test_send_failure_secret_key_env_included_in_headers",
+      "test_send_failure_secret_key_env_missing_headers_do_not_include_secret_key",
+      "test_send_failure_send_callback_raises_logs_error",
+      "test_send_failure_send_callback_raises_non_runtime_error_logs_error"
+    ]
+  },
+  "workers/revision_processing_worker/revision_worker.py::RevisionProcessingWorker._update_doc_request": {
+    "function_name": "RevisionProcessingWorker._update_doc_request",
+    "language": "python",
+    "source_file": "workers/revision_processing_worker/revision_worker.py",
+    "target_file": "test_ai_generated_workers_revision_processing_worker_revision_worker.py",
+    "test_id": "RevisionProcessingWorker__update_doc_request",
+    "test_names": [
+      "test_update_doc_request_callback_timeout_zero",
+      "test_update_doc_request_document_revision_get_returns_none",
+      "test_update_doc_request_empty_secret_key_header_not_included",
+      "test_update_doc_request_invalid_callback_timeout_raises_value_error",
+      "test_update_doc_request_no_update_url",
+      "test_update_doc_request_post_raises_exception_logs_error",
+      "test_update_doc_request_successful_post",
+      "test_update_doc_request_with_secret_key"
+    ]
+  },
+  "workers/revision_processing_worker/revision_worker.py::RevisionProcessingWorker.process_message": {
+    "function_name": "RevisionProcessingWorker.process_message",
+    "language": "python",
+    "source_file": "workers/revision_processing_worker/revision_worker.py",
+    "target_file": "test_ai_generated_workers_revision_processing_worker_revision_worker.py",
+    "test_id": "RevisionProcessingWorker_process_message",
+    "test_names": [
+      "test_process_message_payload_empty_dict_raises_value_error_and_sends_failure",
+      "test_process_message_payload_job_id_none_in_failure_path_job_id_unknown",
+      "test_process_message_payload_none_raises_value_error_and_sends_failure_and_returns_true",
+      "test_process_message_payload_not_dict_in_failure_path_job_id_unknown",
+      "test_process_message_process_revision_returns_false_returns_false",
+      "test_process_message_valid_payload_calls_process_revision_and_returns_its_result",
+      "test_process_message_validate_message_raises_exception_sends_failure_and_returns_true",
+      "test_process_message_validate_message_raises_non_standard_exception_sends_failure_and_returns_true"
+    ]
+  },
+  "workers/run_workers.py::main": {
+    "function_name": "main",
+    "language": "python",
+    "source_file": "workers/run_workers.py",
+    "target_file": "test_ai_generated_workers_run_workers.py",
+    "test_id": "main",
+    "test_names": [
+      "test_main_all_workers_keyboard_interrupt_handled",
+      "test_main_all_workers_runs_threads_and_joins",
+      "test_main_document_processing_worker_keyboard_interrupt_propagates",
+      "test_main_document_processing_worker_runs_directly",
+      "test_main_revision_processing_worker_keyboard_interrupt_propagates",
+      "test_main_revision_processing_worker_runs_directly",
+      "test_main_scraping_worker_keyboard_interrupt_propagates",
+      "test_main_scraping_worker_runs_directly",
+      "test_main_unknown_worker_calls_logger_error_and_exits"
+    ]
+  },
+  "workers/run_workers.py::run_document_processing_worker": {
+    "function_name": "run_document_processing_worker",
+    "language": "python",
+    "source_file": "workers/run_workers.py",
+    "target_file": "test_ai_generated_workers_run_workers.py",
+    "test_id": "run_document_processing_worker",
+    "test_names": [
+      "test_run_document_processing_worker_keyboard_interrupt_logs_and_shutdown_called",
+      "test_run_document_processing_worker_shutdown_called_even_if_shutdown_raises",
+      "test_run_document_processing_worker_start_and_shutdown_called_when_start_returns_none",
+      "test_run_document_processing_worker_start_called_and_shutdown_called",
+      "test_run_document_processing_worker_start_raises_unexpected_exception_propagates_and_shutdown_called"
+    ]
+  },
+  "workers/run_workers.py::run_revision_processing_worker": {
+    "function_name": "run_revision_processing_worker",
+    "language": "python",
+    "source_file": "workers/run_workers.py",
+    "target_file": "test_ai_generated_workers_run_workers.py",
+    "test_id": "run_revision_processing_worker",
+    "test_names": [
+      "test_run_revision_processing_worker_keyboard_interrupt_logs_and_shutdown_called",
+      "test_run_revision_processing_worker_shutdown_called_even_if_start_raises_other_exception",
+      "test_run_revision_processing_worker_shutdown_called_when_shutdown_raises_exception",
+      "test_run_revision_processing_worker_start_called_and_shutdown_called",
+      "test_run_revision_processing_worker_start_called_multiple_times_independent",
+      "test_run_revision_processing_worker_start_raises_non_keyboard_interrupt_exception"
+    ]
+  },
+  "workers/run_workers.py::run_scraping_worker": {
+    "function_name": "run_scraping_worker",
+    "language": "python",
+    "source_file": "workers/run_workers.py",
+    "target_file": "test_ai_generated_workers_run_workers.py",
+    "test_id": "run_scraping_worker",
+    "test_names": [
+      "test_run_scraping_worker_asyncio_run_called_with_coroutine",
+      "test_run_scraping_worker_keyboard_interrupt_logs_and_shutdown_called",
+      "test_run_scraping_worker_logger_info_called_only_once_on_keyboard_interrupt",
+      "test_run_scraping_worker_logger_info_not_called_if_no_keyboard_interrupt",
+      "test_run_scraping_worker_shutdown_always_called_even_if_start_succeeds",
+      "test_run_scraping_worker_shutdown_called_even_if_start_raises_non_keyboardinterrupt",
+      "test_run_scraping_worker_start_called_and_shutdown_called",
+      "test_run_scraping_worker_start_raises_unexpected_exception_propagates"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker.__init__": {
+    "function_name": "ScrapingWorker.__init__",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker___init",
+    "test_names": [
+      "test_init_accepts_subscription_name_with_long_string",
+      "test_init_accepts_subscription_name_with_numeric_string",
+      "test_init_accepts_subscription_name_with_special_characters",
+      "test_init_raises_value_error_when_env_var_empty",
+      "test_init_raises_value_error_when_env_var_is_none",
+      "test_init_raises_value_error_when_env_var_is_whitespace",
+      "test_init_raises_value_error_when_env_var_missing",
+      "test_init_with_valid_subscription_name"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker._get_scraping_utility": {
+    "function_name": "ScrapingWorker._get_scraping_utility",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker__get_scraping_utility",
+    "test_names": [
+      "test_get_scraping_utility_customer_name_case_insensitive_match",
+      "test_get_scraping_utility_customer_name_empty_string_url_empty_string",
+      "test_get_scraping_utility_customer_name_empty_url_no_match",
+      "test_get_scraping_utility_customer_name_match",
+      "test_get_scraping_utility_customer_name_none_url_match",
+      "test_get_scraping_utility_customer_name_none_url_no_match",
+      "test_get_scraping_utility_url_match",
+      "test_get_scraping_utility_url_patterns_partial_match_fails"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker._perform_scraping": {
+    "function_name": "ScrapingWorker._perform_scraping",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker__perform_scraping",
+    "test_names": [
+      "test_perform_scraping_empty_url",
+      "test_perform_scraping_get_scraping_utility_raises_exception",
+      "test_perform_scraping_happy_path",
+      "test_perform_scraping_negative_limit",
+      "test_perform_scraping_none_payload_fields",
+      "test_perform_scraping_scrape_returns_unexpected_tuple_length",
+      "test_perform_scraping_utility_scrape_raises_exception",
+      "test_perform_scraping_zero_counts"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker._send_callback": {
+    "function_name": "ScrapingWorker._send_callback",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker__send_callback",
+    "test_names": [
+      "test_send_callback_callback_url_empty_string_logs_warning_and_returns",
+      "test_send_callback_no_callback_url_logs_warning_and_returns",
+      "test_send_callback_send_callback_raises_propagates_exception",
+      "test_send_callback_with_callback_url_and_no_secret_key_calls_send_callback_with_empty_secret_key",
+      "test_send_callback_with_callback_url_and_secret_key_calls_send_callback_with_headers",
+      "test_send_callback_with_empty_callback_data_calls_send_callback",
+      "test_send_callback_with_none_callback_data_calls_send_callback"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker.generate_context": {
+    "function_name": "ScrapingWorker.generate_context",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker_generate_context",
+    "test_names": [
+      "test_generate_context_accepts_url_with_non_http_scheme",
+      "test_generate_context_raises_invalidvalue_for_malformed_urls",
+      "test_generate_context_raises_invalidvalue_when_payload_missing_url_attribute",
+      "test_generate_context_raises_invalidvalue_when_url_is_empty_string",
+      "test_generate_context_raises_invalidvalue_when_url_is_none",
+      "test_generate_context_raises_invalidvalue_when_url_is_only_scheme",
+      "test_generate_context_raises_invalidvalue_when_url_is_whitespace_only",
+      "test_generate_context_valid_url_calls_logger_and_returns_context"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker.process_message": {
+    "function_name": "ScrapingWorker.process_message",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker_process_message",
+    "test_names": [
+      "test_process_message_callback_raises_error_logs_error_and_returns_true",
+      "test_process_message_failure_callback_raises_logs_error_and_returns_true",
+      "test_process_message_message_data_not_dict_logs_warning_and_returns_true",
+      "test_process_message_perform_scraping_raises_logs_error_and_sends_failure_callback",
+      "test_process_message_successful_flow",
+      "test_process_message_validation_raises_and_job_id_extracted_and_failure_callback_sent",
+      "test_process_message_validation_raises_and_no_job_id_logs_warning_and_returns_true",
+      "test_process_message_validation_raises_and_payload_not_dict_logs_warning_and_returns_true"
+    ]
+  }
+}
