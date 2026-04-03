@@ -1,0 +1,108 @@
+{
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker.__init__": {
+    "function_name": "ScrapingWorker.__init__",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker___init",
+    "test_names": [
+      "test_init_accepts_subscription_name_long_string",
+      "test_init_accepts_subscription_name_numeric",
+      "test_init_accepts_subscription_name_with_special_characters",
+      "test_init_raises_value_error_when_env_var_empty",
+      "test_init_raises_value_error_when_env_var_is_none",
+      "test_init_raises_value_error_when_env_var_is_whitespace",
+      "test_init_raises_value_error_when_env_var_is_zero",
+      "test_init_raises_value_error_when_env_var_missing",
+      "test_init_with_valid_subscription_name"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker._get_scraping_utility": {
+    "function_name": "ScrapingWorker._get_scraping_utility",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker__get_scraping_utility",
+    "test_names": [
+      "test_get_scraping_utility_customer_name_case_insensitive_match",
+      "test_get_scraping_utility_customer_name_empty_string_uses_url_registry",
+      "test_get_scraping_utility_customer_name_match",
+      "test_get_scraping_utility_customer_name_none_uses_url_registry",
+      "test_get_scraping_utility_raises_value_error_on_non_string_customer_name",
+      "test_get_scraping_utility_raises_value_error_on_non_string_url",
+      "test_get_scraping_utility_raises_value_error_when_no_match",
+      "test_get_scraping_utility_url_match_when_no_customer_name_match",
+      "test_get_scraping_utility_url_registry_all_patterns_must_match"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker._perform_scraping": {
+    "function_name": "ScrapingWorker._perform_scraping",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker__perform_scraping",
+    "test_names": [
+      "test_perform_scraping_customer_name_empty_string",
+      "test_perform_scraping_empty_url",
+      "test_perform_scraping_get_scraping_utility_raises_exception",
+      "test_perform_scraping_happy_path",
+      "test_perform_scraping_limit_is_none",
+      "test_perform_scraping_negative_limit",
+      "test_perform_scraping_scrape_returns_none_values",
+      "test_perform_scraping_utility_scrape_raises_exception",
+      "test_perform_scraping_zero_counts"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker._send_callback": {
+    "function_name": "ScrapingWorker._send_callback",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker__send_callback",
+    "test_names": [
+      "test_send_callback_no_callback_url_logs_warning_and_returns",
+      "test_send_callback_send_callback_raises_propagates_exception",
+      "test_send_callback_with_callback_url_and_no_secret_key_calls_send_callback_with_empty_secret_key",
+      "test_send_callback_with_callback_url_and_secret_key_calls_send_callback_with_headers",
+      "test_send_callback_with_empty_callback_data_calls_send_callback",
+      "test_send_callback_with_empty_string_callback_url_logs_warning_and_returns",
+      "test_send_callback_with_non_string_callback_url_calls_send_callback",
+      "test_send_callback_with_none_callback_data_calls_send_callback"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker.generate_context": {
+    "function_name": "ScrapingWorker.generate_context",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker_generate_context",
+    "test_names": [
+      "test_generate_context_raises_invalidvalue_when_url_has_no_netloc",
+      "test_generate_context_raises_invalidvalue_when_url_has_no_scheme",
+      "test_generate_context_raises_invalidvalue_when_url_is_empty_string",
+      "test_generate_context_raises_invalidvalue_when_url_is_none",
+      "test_generate_context_url_with_non_http_scheme",
+      "test_generate_context_url_with_whitespace_only_raises",
+      "test_generate_context_valid_url_calls_logger_and_returns_context",
+      "test_generate_context_valid_url_with_query_and_fragment"
+    ]
+  },
+  "workers/scraping_worker/scraping_worker.py::ScrapingWorker.process_message": {
+    "function_name": "ScrapingWorker.process_message",
+    "language": "python",
+    "source_file": "workers/scraping_worker/scraping_worker.py",
+    "target_file": "test_ai_generated_workers_scraping_worker_scraping_worker.py",
+    "test_id": "ScrapingWorker_process_message",
+    "test_names": [
+      "test_process_message_callback_raises_error_logs_error_and_returns_true",
+      "test_process_message_successful_flow",
+      "test_process_message_validate_message_returns_invalid_payload_raises_in_perform_scraping",
+      "test_process_message_validate_message_returns_message_but_send_callback_raises_error_logs_error",
+      "test_process_message_validate_message_returns_message_with_missing_payload_attributes",
+      "test_process_message_validation_raises_and_callback_raises_logs_error_and_returns_true",
+      "test_process_message_validation_raises_and_callback_succeeds",
+      "test_process_message_validation_raises_no_job_id_logs_warning_and_returns_true",
+      "test_process_message_validation_raises_payload_not_dict_logs_warning_and_returns_true"
+    ]
+  }
+}
